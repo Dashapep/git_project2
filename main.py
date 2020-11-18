@@ -28,7 +28,10 @@ class Example(QDialog, Ui_yellowballs):
         r = int(random.random() * 300)
         qp = QPainter()
         qp.begin(self)
-        qp.setPen(QColor(240, 240, 0))
+        a = int(random.random() * 250)
+        b = int(random.random() * 250)
+        c = int(random.random() * 250)
+        qp.setPen(QColor(a, b, c))
         qp.drawEllipse(x, y, 10 + r, 10 + r)
         qp.end()
 
